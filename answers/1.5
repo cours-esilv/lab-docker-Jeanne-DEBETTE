@@ -2,4 +2,5 @@ docker stop newContainer
 
 docker rm newContainer
 
-docker run -d --name newContainer -p 8080:80 -e CURRENT_ENVIRONMENT=development monImagePython:3.8
+docker run -d --name newContainer -p 8080:80 -e environment=development monImagePython
+
