@@ -1,0 +1,8 @@
+# On stop le container
+docker stop newContainer
+
+# On l'enlève
+docker rm newContainer
+
+# On lance un nouveau container avec les variables d'environement et les ports ouverts
+docker run -d --name newContainer -p 8080:80 -e CURRENT_ENVIRONMENT=production monImagePython:3.8
