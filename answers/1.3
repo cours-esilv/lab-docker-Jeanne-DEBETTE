@@ -1,0 +1,5 @@
+# Construire l'image Docker à partir de GitHub
+docker build -t monImagePython:3.8 https://github.com/cours-esilv/lab-docker-Jeanne-DEBETTE/tree/main/.github
+
+#  Lancer un container Docker depuis cette image
+docker run -d --name containerMLOPS_TD3 -p 8080:80 monImagePython:3.8
