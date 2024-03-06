@@ -1,8 +1,5 @@
-# Stopper le container qui est en train d'être utilisé
 docker stopcontainerMLOPS_TD3
 
-# Retirer ce container
 docker rm containerMLOPS_TD3
 
-# Lancer un nouveau container avec les ports ouverts
 docker run -d --name newContainer -p 8080:80 monImagePython:3.8
