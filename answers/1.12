@@ -1,2 +1,4 @@
+docker stop front_container back_container
+docker rm front_container back_container
 docker run -d --name back_container -p 8081:80 back_image
 docker run -d --name front_container -p 8080:80 -e BACKEND_URL=http://back_container:80 front_image
