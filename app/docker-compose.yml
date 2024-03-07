@@ -1,4 +1,4 @@
 version: '3'
 services:
-  my-service:
-    image: my-image
+  Q2:
+    image: back_image
